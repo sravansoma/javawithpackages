@@ -28,9 +28,8 @@ public class SerializableXml {
             c.setStudent(s);
 
             XMLEncoder x = new XMLEncoder(new BufferedOutputStream(new FileOutputStream("students.xml")));
-            x.writeObject(c);
+            x.writeObject(c.getStudents());
             x.close();
-            System.out.println(st1.getRollno());
         } catch (FileNotFoundException e) {
             Logger.getLogger(SerializableXml.class.getName()).log(Level.SEVERE, null, e);
         }

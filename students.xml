@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="11.0.1" class="java.beans.XMLDecoder">
- <object class="Serializable.College"/>
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Serializable.Student">
+    <void property="rollno">
+     <int>102</int>
+    </void>
+    <void property="sname">
+     <string>kumar</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Serializable.Student"/>
+  </void>
+ </object>
 </java>
